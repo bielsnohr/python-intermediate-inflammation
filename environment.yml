@@ -1,0 +1,11 @@
+name: python-intermediate-inflammation
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - matplotlib
+  - pytest
+  - conda-build
+  - pytest-cov
+prefix: /home/mbluteau/miniforge3/envs/python-intermediate-inflammation

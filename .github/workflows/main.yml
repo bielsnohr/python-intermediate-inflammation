@@ -31,10 +31,10 @@ jobs:
         activate-environment: patient
         environment-file: environment.yml
 
-    - name: Install our inflammation package
+    - name: Install conda-build and our inflammation package
       run: |
-        conda activate patient
-        conda develop .
+        conda install -n base --yes conda-build
+        conda develop -n patient .
 
     - name: Test with PyTest
       run: |

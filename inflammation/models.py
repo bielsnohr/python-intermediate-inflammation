@@ -46,6 +46,11 @@ def daily_min(data):
     return np.min(data, axis=0)
 
 
+def patient_normalise(data):
+    """Normalise patient data from a 2D inflammation data array."""
+    max = np.max(data, axis=1)
+    return data / max[:, np.newaxis]
+
 # TODO(lesson-design) Add Patient class
 # TODO(lesson-design) Implement data persistence
 # TODO(lesson-design) Add Doctor class

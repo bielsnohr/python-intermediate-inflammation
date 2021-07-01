@@ -33,7 +33,8 @@ jobs:
 
     - name: Install our inflammation package
       run: |
-        conda develop -n patient .
+        conda activate patient
+        conda develop .
 
     - name: Test with PyTest
       run: |

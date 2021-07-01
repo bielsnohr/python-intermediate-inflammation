@@ -2,7 +2,7 @@ name: python-intermediate-inflammation
 channels:
   - conda-forge
 dependencies:
-  - python=3.9
+  - python
   - numpy
   - matplotlib
   - pytest
